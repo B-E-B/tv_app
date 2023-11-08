@@ -310,7 +310,7 @@ class MovieListScreen extends StatelessWidget {
                           const SizedBox(height: 23),
                           GestureDetector(
                             onTap: () {
-                              movieListBloc.changeFlag(!hidePanelFlag);
+                              movieListBloc.changeFlag(hidePanelFlag);
                             },
                             child: _tvMiniIcon(TvMiniIcons.up_arrow),
                           ),
@@ -321,7 +321,7 @@ class MovieListScreen extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            movieListBloc.changeFlag(!hidePanelFlag);
+                            movieListBloc.changeFlag(hidePanelFlag);
                           },
                           child: _tvMiniIcon(Icons.arrow_downward),
                         ),

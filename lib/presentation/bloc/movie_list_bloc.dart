@@ -128,8 +128,8 @@ class MovieListBloc {
     return NetworkImage(movie.posterUrlPreview);
   }
 
-  void changeFlag(bool isHidden) {
-    _hidePanelFlag.add(isHidden);
+  void changeFlag(bool panelState) {
+    _hidePanelFlag.add(!panelState);
   }
 
   dispose() {
